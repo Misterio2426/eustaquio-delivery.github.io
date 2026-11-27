@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eustaquio Delivery | Pedidos Rápidos y Seguros</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">Eustaquio<span>Delivery</span></div>
+      <div class="cart-badge" id="cartBadge">Carrito: <span id="cartCount">0</span></div>
+    </nav>
+
+    <div class="hero-content">
+      <span class="tag">Servicio rápido a domicilio</span>
+      <h1>Tus pedidos llegan frescos y a tiempo con <span>Eustaquio Delivery</span></h1>
+      <p>Explora opciones disponibles, arma tu pedido en segundos y envíalo directo para coordinar entrega.</p>
+      <a href="#menu" class="btn-primary">Ver disponibles</a>
+    </div>
+  </header>
+
+  <main id="menu" class="container">
+    <div class="section-header">
+      <h2>Combos y productos destacados</h2>
+      <p>Selecciona lo que deseas agregar a tu orden</p>
+    </div>
+
+    <section class="grid" id="productGrid"></section>
+
+    <aside class="cart-panel" id="cartPanel">
+      <h3>Resumen de tu pedido</h3>
+      <ul id="cartItems" class="cart-list">
+        <li class="empty">Tu carrito está vacío. Agrega un producto.</li>
+      </ul>
+      <div class="cart-footer">
+        <div class="total-row">
+          <span>Total estimado:</span>
+          <strong id="cartTotal">S/ 0.00</strong>
+        </div>
+        <button id="checkoutBtn" class="btn-checkout" type="button">Confirmar pedido</button>
+        <p id="statusMsg" class="status-msg" aria-live="polite"></p>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <p>Eustaquio Delivery — Proyecto Web • Fabricio Alexander Eustaquio López</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
